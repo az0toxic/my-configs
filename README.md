@@ -14,9 +14,10 @@ These files are tailored to my personal setup. Feel free to use them as inspirat
 
 ![Rofi](screenshots/rice 3.png)
 
-![Waypaper](screenshots/rice 2.png)
+<img width="1357" height="758" alt="image" src="https://github.com/user-attachments/assets/c8276974-02e0-43a6-82dd-106f85003158" />
 
-![Kitty](screenshots/rice nixos.png)
+
+
 # License
 
 No license has been specified yet. Please ask for permission before reusing or redistributing these files.
