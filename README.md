@@ -12,7 +12,7 @@ These files are tailored to my personal setup. Feel free to use them as inspirat
 
 # Showcase
 
-![Rofi](screenshots/rice 3.png)
+<img width="1356" height="728" alt="image" src="https://github.com/user-attachments/assets/7fb67d24-cef0-4c3a-a68e-73680aee3128" />
 
 <img width="1357" height="758" alt="image" src="https://github.com/user-attachments/assets/c8276974-02e0-43a6-82dd-106f85003158" />
 
