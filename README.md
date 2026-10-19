@@ -10,9 +10,13 @@ Contents
 
 These files are tailored to my personal setup. Feel free to use them as inspiration, or adapt them to your own system before applying them.
 
-# Preview
+# Showcase
 
-Add a screenshot of your desktop here, if you like.
+![Rofi](screenshots/rice 3.png)
+
+![Waypaper](screenshots/rice 2.png)
+
+![Kitty](screenshots/rice nixos.png)
 # License
 
 No license has been specified yet. Please ask for permission before reusing or redistributing these files.
