@@ -1,15 +1,17 @@
 # .config
 
-This directory is for user-level configuration files.
+This directory contains my user-level configuration files.
 
-Example:
-- hyprland
-- waybar
-- kitty
-- fastfetch
-- rofi
-- waypaper
-- librewolf etc
+It includes configurations for applications such as:
 
-Before using those configuration I recommend you to get the app needed especially for the wayabar, those app are in etc/nixos/configuration.nix.
+    Hyprland
+    Waybar
+    Kitty
+    Fastfetch
+    Rofi
+    Waypaper
+    LibreWolf
+
+Before using these configurations, make sure to install the required applications. The packages I use are listed in etc/nixos/configuration.nix.
+
 
