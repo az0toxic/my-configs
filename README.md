@@ -20,4 +20,4 @@ These files are tailored to my personal setup. Feel free to use them as inspirat
 
 # License
 
-No license has been specified yet. Please ask for permission before reusing or redistributing these files.
+No license has been specified yet. Go ahead and have fun ! Just don't forget to mention me.
