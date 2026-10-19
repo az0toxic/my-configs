@@ -1,1 +1,83 @@
+@define-color kana_bg     #16161d;
+@define-color kana_bg_alt #1f1f28;
+@define-color kana_border #54546d;
+@define-color kana_fg     #dcd7ba;
+@define-color kana_muted  #727169;
+@define-color kana_accent #7e9cd8;
+@define-color kana_select #2d4f67;
 
+* {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 13px;
+}
+
+window, .background, scrolledwindow, viewport, iconview, flowbox, .view {
+    background-color: @kana_bg;
+    color: @kana_fg;
+}
+
+.view:selected, iconview:selected, flowboxchild:selected, .cell:selected {
+    background-color: @kana_select;
+    color: @kana_fg;
+}
+
+button {
+    background-image: none;
+    background-color: @kana_bg_alt;
+    color: @kana_fg;
+    border: 1px solid @kana_border;
+    border-radius: 6px;
+    box-shadow: none;
+    text-shadow: none;
+    padding: 4px 10px;
+}
+
+button:hover {
+    background-color: @kana_select;
+    border-color: @kana_accent;
+}
+
+button:active, button:checked {
+    background-color: @kana_select;
+}
+
+entry {
+    background-image: none;
+    background-color: @kana_bg_alt;
+    color: @kana_fg;
+    border: 1px solid @kana_border;
+    border-radius: 6px;
+    box-shadow: none;
+    caret-color: @kana_accent;
+}
+
+entry:focus {
+    border-color: @kana_accent;
+}
+
+menu, popover, popover.background {
+    background-color: @kana_bg_alt;
+    color: @kana_fg;
+    border: 1px solid @kana_border;
+    border-radius: 6px;
+}
+
+menuitem:hover, modelbutton:hover {
+    background-color: @kana_select;
+}
+
+scrollbar {
+    background-color: transparent;
+}
+
+scrollbar slider {
+    background-color: @kana_border;
+    border: none;
+    border-radius: 6px;
+    min-width: 6px;
+    min-height: 6px;
+}
+
+scrollbar slider:hover {
+    background-color: @kana_accent;
+}
