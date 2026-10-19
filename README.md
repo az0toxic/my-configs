@@ -16,7 +16,7 @@ These files are tailored to my personal setup. Feel free to use them as inspirat
 
 <img width="1357" height="758" alt="image" src="https://github.com/user-attachments/assets/c8276974-02e0-43a6-82dd-106f85003158" />
 
-
+<img width="1365" height="765" alt="image" src="https://github.com/user-attachments/assets/3931443f-8114-4587-ac1e-7c3f7182a983" />
 
 # License
 
