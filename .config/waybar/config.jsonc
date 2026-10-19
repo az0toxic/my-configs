@@ -1,1 +1,67 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "modules-left": ["clock", "cpu", "memory", "disk"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["custom/distro", "network", "pulseaudio", "battery", "tray", "custom/power"],
+
+
+    "hyprland/workspaces": {
+    "format": "{name}",
+    "on-click": "activate",
+    "persistent-workspaces": {
+        "*": [1, 2, 3, 4]
+    },
+    "format-icons": {
+        "active": "\uf111",
+        "default": "\uf10c"
+    }
+},
+    "clock": {
+        "format": "{:%a %d  %H:%M}"
+    },
+    "cpu": {
+        "format": "\uf2db {usage}%"
+    },
+    "memory": {
+        "format": "\uefc5 {}%"
+    },
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-icons": ["\uf244", "\uf243", "\uf242", "\uf241", "\uf240"]
+    },
+    "network": {
+        "format-wifi": "\uf1eb {essid}",
+        "format-ethernet": "\uf796 {ifname}",
+        "format-disconnected": "\uf127 Off",
+        "on-click": "kitty -e nmtui"
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-icons": {
+            "default": ["\uf026", "\uf027", "\uf028"]
+        }
+    },
+    "tray": {
+        "spacing": 7
+    },
+    "custom/power": {
+    "format": "\uf011",
+    "tooltip": false,
+    "on-click": "wlogout"
+    },
+    "disk": {
+    "path": "/",
+    "interval": 30,
+    "format": "\uf0a0 {percentage_used}%"
+},
+"custom/distro": {
+    "format": "\uf313 nixos",
+    "tooltip": false
+}
+}
+
+
+
 
