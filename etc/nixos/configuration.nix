@@ -205,7 +205,6 @@
    yazi
    git
    jq
-   python3
    wlogout
    obsidian
    vlc
@@ -213,9 +212,9 @@
    flameshot
    brightnessctl
    gnome-tweaks
-   discord
    obs-studio
    losslesscut
+   vesktop
   ];
 
   fonts.packages = with pkgs; [
