@@ -1,7 +1,8 @@
 # NixOS Configuration
 
 My configuration files for NixOS and my desktop environment. This repository includes settings for Hyprland, Waybar, and other tools I use.
-Contents
+
+# Contents
 
     .config/ — application and desktop environment configurations
     etc/ — NixOS-related configuration files
