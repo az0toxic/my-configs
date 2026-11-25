@@ -94,8 +94,8 @@ hl.env("HYPRCURSOR_SIZE", "24")
 -- Refer to https://wiki.hypr.land/Configuring/Basics/Variables/
 hl.config({
     general = {
-        gaps_in  = 3,
-        gaps_out = 2,
+        gaps_in  = 0,
+        gaps_out = 0,
 
         border_size = 2,
 
@@ -114,7 +114,7 @@ hl.config({
     },
 
     decoration = {
-        rounding       = 1,
+        rounding       = 0,
         rounding_power = 2,
 
         -- Change transparency of focused and unfocused windows
@@ -284,9 +284,8 @@ hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + up",    hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + down",  hl.dsp.focus({ direction = "down" }))
 
--- Screenshot and record
+-- Screenshot
 hl.bind(mainMod .. " + TAB",  hl.dsp.exec_cmd("flameshot gui"))
-
 
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
