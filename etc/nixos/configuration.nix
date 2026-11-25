@@ -13,7 +13,10 @@
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.systemd-boot.configurationLimit = 5;
+  boot.loader.systemd-boot.configurationLimit = 10;
+  boot.loader.systemd-boot.consoleMode = "max";
+  boot.loader.systemd-boot.editor = false;
+
 
   networking.hostName = "zguegito"; # Define your hostname.
   networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -47,16 +50,6 @@
     openFirewall = true;
   };
 
-  # MAJ automatique
-  system.autoUpgrade.enable = true;
-  system.autoUpgrade.dates ="weekly";
-
-  # Automatic cleanup
-  nix.gc.automatic = true;
-  nix.gc.dates = "daily";
-  nix.gc.options = "--delete-older-than 5d";
-  nix.settings.auto-optimise-store = true;
-
   # autocomplete bash
   programs.bash = {
     interactiveShellInit = ''
@@ -65,8 +58,6 @@
       ble-face auto_complete="fg=244,bg=none"
       ble-face region="bg=none"
       ble-face region_match="bg=none"
-
-
 
 
     '';
@@ -170,14 +161,13 @@
   # For more information, see `man configuration.nix` or https://nixos.org/manual/nixos/stable/options#opt-system.stateVersion .
   system.stateVersion = "26.05"; # Did you read the comment?
   
-  programs.hyprland.enable = true;
   
   # Gestionnaire de connexion (ecran de login) - greetd est leger et simple
   services.greetd = {
   enable = true;
   settings = {
     default_session = {
-      command = "${pkgs.tuigreet}/bin/tuigreet --time --cmd Hyprland";
+      command = "${pkgs.tuigreet}/bin/tuigreet --time --cmd start-hyprland";
     };
   };
 };
@@ -200,7 +190,6 @@
    libreoffice-fresh
    vanilla-dmz
    fd
-   fzf
    blesh
    yazi
    git
@@ -211,10 +200,10 @@
    overskride
    flameshot
    brightnessctl
-   gnome-tweaks
    obs-studio
-   losslesscut
-   vesktop
+   discord
+   kdePackages.kdenlive
+   nautilus
   ];
 
   fonts.packages = with pkgs; [
@@ -227,6 +216,7 @@
     serif = [ "JetBrains Mono" ];
   };
 # Support Wayland pour certaines apps
-programs.xwayland.enable = true;
+  programs.hyprland.enable = true;
+  programs.xwayland.enable = true;
 
 }
